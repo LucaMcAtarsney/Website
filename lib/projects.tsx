@@ -10,6 +10,14 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+   {
+    id: "procedural-worm",
+    title: "Procedural Worm",
+    tagline: "A worm that is procedurally animated, left click to guide it.",
+    year: "2025",
+    roles: ["Procedural Animation", "Godot"],
+    link: "/projects/procedural-worm",
+  },
   {
     id: "physics-toy",
     title: "Kinetic Toy",

@@ -15,7 +15,7 @@ export default function ProceduralWormPage() {
           </h1>
 
           <div className="hero-meta">
-            <span>Built as a focused micro–experiment in Godot.</span>
+            <span>Built as a focused micro-experiment in Godot.</span>
             <span>Runs directly in the browser.</span>
           </div>
         </header>

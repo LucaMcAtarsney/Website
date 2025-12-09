@@ -10,7 +10,15 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-   {
+  {
+    id: "audio-visualiser",
+    title: "Audio Visualiser",
+    tagline: "A reactive music visualiser.",
+    year: "2025",
+    roles: ["Procedural Generation", "Audio", "Touch Designer"],
+    link: "/projects/audio-visualiser",
+  },
+  {
     id: "procedural-worm",
     title: "Procedural Worm",
     tagline: "A worm that is procedurally animated, left click to guide it.",

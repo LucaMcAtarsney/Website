@@ -26,4 +26,12 @@ export const projects: Project[] = [
     roles: ["Chunk generation", "Godot"],
     link: "/projects/endless-runner",
   },
+  {
+    id: "asteroids-3D",
+    title: "Asteroids 3D",
+    tagline: "A 3D take on the classic Asteroids game.",
+    year: "2025",
+    roles: ["3D Movement", "Camera Control", "Godot"],
+    link: "/projects/asteroids-3D",
+  },
 ];

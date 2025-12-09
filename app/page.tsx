@@ -28,7 +28,7 @@ export default function HomePage() {
           <h1 className="hero-title">
             <span className="hero-name">Luca McAtarsney</span>
             <span className="hero-sub">
-              I design and build modular game systems and experiences.
+              I design and build modular game systems.
             </span>
           </h1>
 

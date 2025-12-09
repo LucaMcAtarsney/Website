@@ -19,6 +19,14 @@ export const projects: Project[] = [
     link: "/projects/procedural-worm",
   },
   {
+    id: "endless-runner",
+    title: "Endless Runner",
+    tagline: "A first attempt at chunk based level generation.",
+    year: "2025",
+    roles: ["Chunk generation", "Godot"],
+    link: "/projects/endless-runner",
+  },
+  {
     id: "physics-toy",
     title: "Kinetic Toy",
     tagline: "A browser-native physics sandbox of falling shapes.",

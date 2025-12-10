@@ -19,6 +19,14 @@ export const projects: Project[] = [
     link: "/projects/audio-visualiser",
   },
   {
+    id: "scrabbled",
+    title: "Scrabbled",
+    tagline: "A scrabble wordle-like",
+    year: "2025",
+    roles: ["Seeding", "Lighting", "Godot"],
+    link: "/projects/scrabbled",
+  },
+  {
     id: "procedural-worm",
     title: "Procedural Worm",
     tagline: "A worm that is procedurally animated, left click to guide it.",

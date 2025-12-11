@@ -27,6 +27,22 @@ export const projects: Project[] = [
     link: "/projects/scrabbled",
   },
   {
+    id: "game-of-life",
+    title: "Conway's Game of Life",
+    tagline: "Cellular automaton simulation.",
+    year: "2025",
+    roles: ["Simulation", "Web"],
+    link: "/projects/game-of-life",
+  },
+  {
+    id: "northern-lights",
+    title: "Northern Lights",
+    tagline: "A visual simulation of the Northern Lights.",
+    year: "2025",
+    roles: ["Simulation", "Web"],
+    link: "/projects/northern-lights",
+  },
+  {
     id: "procedural-worm",
     title: "Procedural Worm",
     tagline: "A worm that is procedurally animated, left click to guide it.",

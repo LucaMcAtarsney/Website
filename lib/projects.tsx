@@ -11,6 +11,14 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "brisk",
+    title: "Brisk (In Progress)",
+    tagline: "A take on Briscola.",
+    year: "2025",
+    roles: ["Game Design"],
+    link: "/projects/brisk",
+  },
+  {
     id: "audio-visualiser",
     title: "Audio Visualiser",
     tagline: "A reactive music visualiser.",
@@ -20,7 +28,7 @@ export const projects: Project[] = [
   },
   {
     id: "scrabbled",
-    title: "Scrabbled",
+    title: "Scrabbled (Unfinished)",
     tagline: "A scrabble wordle-like",
     year: "2025",
     roles: ["Seeding"],

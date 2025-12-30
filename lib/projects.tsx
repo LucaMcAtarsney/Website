@@ -15,7 +15,7 @@ export const projects: Project[] = [
     title: "Audio Visualiser",
     tagline: "A reactive music visualiser.",
     year: "2025",
-    roles: ["Procedural Generation", "Audio", "Touch Designer"],
+    roles: ["Audio Reactivity"],
     link: "/projects/audio-visualiser",
   },
   {
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Scrabbled",
     tagline: "A scrabble wordle-like",
     year: "2025",
-    roles: ["Seeding", "Lighting", "Godot"],
+    roles: ["Seeding"],
     link: "/projects/scrabbled",
   },
   {
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: "Conway's Game of Life",
     tagline: "Cellular automaton simulation.",
     year: "2025",
-    roles: ["Simulation", "Web"],
+    roles: ["Simulation"],
     link: "/projects/game-of-life",
   },
   {
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     title: "Northern Lights",
     tagline: "A visual simulation of the Northern Lights.",
     year: "2025",
-    roles: ["Simulation", "Web"],
+    roles: ["Visuals"],
     link: "/projects/northern-lights",
   },
   {
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     title: "Procedural Worm",
     tagline: "A worm that is procedurally animated, left click to guide it.",
     year: "2025",
-    roles: ["Procedural Animation", "Godot"],
+    roles: ["Procedural Animation"],
     link: "/projects/procedural-worm",
   },
   {
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: "Endless Runner",
     tagline: "A first attempt at chunk based level generation.",
     year: "2025",
-    roles: ["Chunk generation", "Godot"],
+    roles: ["Chunk generation"],
     link: "/projects/endless-runner",
   },
   {
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     title: "Asteroids 3D",
     tagline: "A 3D take on the classic Asteroids game.",
     year: "2025",
-    roles: ["3D Movement", "Camera Control", "Godot"],
+    roles: ["3D Movement"],
     link: "/projects/asteroids-3D",
   },
 ];

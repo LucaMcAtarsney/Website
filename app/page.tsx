@@ -21,20 +21,19 @@ export default function HomePage() {
               gap: "1rem",
             }}
           >
-            <div className="hero-label">INTERACTIVE SYSTEMS</div>
+            <div className="hero-label">Luca McAtarsney</div>
             <ThemeToggle />
           </div>
 
           <h1 className="hero-title">
-            <span className="hero-name">Luca McAtarsney</span>
+            <span className="hero-name">Pentgon</span>
             <span className="hero-sub">
-              I design and build modular game systems.
+              Sometimes coding is fun
             </span>
           </h1>
 
           <div className="hero-meta">
-            <span>Based on the web.</span>
-            <span>Focused on play, systems, and feel.</span>
+            <span>Programming. Design. Art. Audio. Feeling.</span>
           </div>
         </header>
 

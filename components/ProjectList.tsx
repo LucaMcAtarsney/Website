@@ -7,8 +7,7 @@ export function ProjectList() {
       <header className="projects-header">
         <h2>Modular Constructs</h2>
         <p>
-          Small, focused experiments. Each one explores a single idea: movement,
-          interaction, systems, or generative visuals.
+          Small experiments. Each focused on a single idea to improve my developer skills.
         </p>
       </header>
 

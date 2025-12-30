@@ -19,6 +19,14 @@ export const projects: Project[] = [
     link: "/projects/brisk",
   },
   {
+    id: "campfire-scene",
+    title: "Campfire Scene",
+    tagline: "An attempt at scene design.",
+    year: "2025",
+    roles: ["Environment Design"],
+    link: "/projects/campfire-scene",
+  },
+  {
     id: "audio-visualiser",
     title: "Audio Visualiser",
     tagline: "A reactive music visualiser.",

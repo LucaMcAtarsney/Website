@@ -11,6 +11,14 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "vampire_survivors_clone",
+    title: "Vampire Survivors Clone (In Progress)",
+    tagline: "A survival game.",
+    year: "2026",
+    roles: ["Game Design"],
+    link: "/projects/brisk",
+  },
+  {
     id: "brisk",
     title: "Brisk (In Progress)",
     tagline: "A take on Briscola.",

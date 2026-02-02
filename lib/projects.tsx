@@ -16,7 +16,7 @@ export const projects: Project[] = [
     tagline: "A survival game.",
     year: "2026",
     roles: ["Game Design"],
-    link: "/projects/brisk",
+    link: "/projects/vampire_survivors_clone",
   },
   {
     id: "brisk",

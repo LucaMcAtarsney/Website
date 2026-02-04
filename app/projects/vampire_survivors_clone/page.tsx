@@ -57,7 +57,7 @@ export default function VampirePage() {
                 background: "black",
               }}
             >
-              {/* <iframe
+              <iframe
                 src="/VampireSurvivorsClone/index.html"
                 title="VampireSurvivorsClone"
                 style={{
@@ -65,7 +65,7 @@ export default function VampirePage() {
                   width: "100%",
                   height: "100%",
                 }}
-              /> */}
+              />
             </div>
           </div>
         </section>

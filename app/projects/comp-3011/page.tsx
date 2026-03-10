@@ -7,7 +7,7 @@ export default function COMP3011Page() {
         <header className="hero" style={{ paddingTop: "1.5rem" }}>
           <div className="hero-label">EXPERIMENT / GAME DESIGN</div>
           <h1 className="hero-title">
-            <span className="hero-name">COMP 3011 Coursework 1</span>
+            <span className="hero-name">COMP 3011 Coursework</span>
             <span className="hero-sub">
               A survival game similar to vampire survivors with API integration.
             </span>

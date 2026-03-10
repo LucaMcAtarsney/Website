@@ -1,15 +1,15 @@
 import Link from "next/link";
 
-export default function VampirePage() {
+export default function COMP3011Page() {
   return (
     <main className="root">
       <div className="content-layer">
         <header className="hero" style={{ paddingTop: "1.5rem" }}>
           <div className="hero-label">EXPERIMENT / GAME DESIGN</div>
           <h1 className="hero-title">
-            <span className="hero-name">Vampire Survivors Clone</span>
+            <span className="hero-name">COMP 3011 Coursework 1</span>
             <span className="hero-sub">
-              A survival game similar to vampire survivors.
+              A survival game similar to vampire survivors with API integration.
             </span>
           </h1>
 

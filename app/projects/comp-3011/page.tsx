@@ -12,7 +12,7 @@ export default function COMP3011Page() {
               A survival game similar to vampire survivors with API integration.
             </span>
           </h1>
-
+          <span>Controls - WASD to move, Arrow keys to shoot</span>
           <div className="hero-meta">
             <span>Built in Godot.</span>
             <span>Runs directly in the browser.</span>

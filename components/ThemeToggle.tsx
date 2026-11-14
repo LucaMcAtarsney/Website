@@ -1,37 +1,23 @@
-// components/ThemeToggle.tsx
 "use client";
 
 import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
-  const [isLight, setIsLight] = useState(false);
+  const [light, setLight] = useState(false);
 
-  // Read initial theme from localStorage if present
+  // The pre-paint script in layout.tsx already applied the class; mirror it.
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    const stored = window.localStorage.getItem("theme");
-    const prefersLight =
-      stored === "light" ||
-      (!stored &&
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: light)").matches);
-
-    if (prefersLight) {
-      document.documentElement.classList.add("light-mode");
-      setIsLight(true);
-    }
+    setLight(document.documentElement.classList.contains("light-mode"));
   }, []);
 
   const toggle = () => {
-    const next = !isLight;
-    setIsLight(next);
-
-    if (next) {
-      document.documentElement.classList.add("light-mode");
-      window.localStorage.setItem("theme", "light");
-    } else {
-      document.documentElement.classList.remove("light-mode");
-      window.localStorage.setItem("theme", "dark");
+    const next = !light;
+    setLight(next);
+    document.documentElement.classList.toggle("light-mode", next);
+    try {
+      window.localStorage.setItem("theme", next ? "light" : "dark");
+    } catch {
+      /* ignore */
     }
   };
 
@@ -39,13 +25,10 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggle}
-      className="theme-toggle"
-      aria-label="Toggle light mode"
+      className="toggle"
+      aria-label={`Switch to ${light ? "dark" : "light"} theme`}
     >
-      <span className="theme-toggle-dot" />
-      <span className="theme-toggle-label">
-        {isLight ? "light" : "dark"}
-      </span>
+      [ {light ? "light" : "dark"} ]
     </button>
   );
 }

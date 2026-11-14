@@ -1,60 +1,32 @@
-// app/page.tsx
-import { ThreeBackground } from "@/components/ThreeBackground";
+import { AsciiStarfield } from "@/components/AsciiStarfield";
 import { ProjectList } from "@/components/ProjectList";
+import { Profile } from "@/components/Profile";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export default function HomePage() {
   return (
-    <main className="root">
-      <ThreeBackground />
+    <main>
+      <div className="toggle-fixed">
+        <ThemeToggle />
+      </div>
 
-      <div className="content-layer">
+      <section className="hero-full">
+        <AsciiStarfield />
+        <div className="hero-center">
+          <h1 className="hero-name">Pentgon</h1>
+          <p className="hero-role">a programming portfolio</p>
+          <p className="hero-byline">Luca McAtarsney</p>
+        </div>
+        <a href="#projects" className="scroll-cue">
+          scroll<span>↓</span>
+        </a>
+      </section>
 
-        <header className="hero">
-
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
-              marginBottom: "1.6rem",
-              gap: "1rem",
-            }}
-          >
-            <div className="hero-label">Luca McAtarsney</div>
-            <ThemeToggle />
-          </div>
-
-          <h1 className="hero-title">
-            <span className="hero-name">Pentgon</span>
-            <span className="hero-sub">
-              Sometimes coding is fun
-            </span>
-          </h1>
-
-          <div className="hero-meta">
-            <span>Programming. Design. Art. Audio. Feeling.</span>
-          </div>
-        </header>
-
+      <div className="wrap">
         <ProjectList />
-
-        <footer className="footer">
-          <span>© {new Date().getFullYear()} Luca McAtarsney</span>
-          <span className="footer-dot">•</span>
-          <a href="mailto:lucamc1604@gmail.com" className="footer-link">
-            contact
-          </a>
-          <span className="footer-dot">•</span>
-          <a
-            href="https://github.com/LucaMcAtarsney"
-            target="_blank"
-            className="footer-link"
-          >
-            github
-          </a>
-        </footer>
-
+        <Profile />
+        <SiteFooter />
       </div>
     </main>
   );

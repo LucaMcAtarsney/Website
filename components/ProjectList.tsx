@@ -1,38 +1,25 @@
 import Link from "next/link";
-import { projects } from "@/lib/projects";
+import { visibleProjects } from "@/lib/projects";
 
 export function ProjectList() {
   return (
-    <section className="projects">
-      <header className="projects-header">
-        <h2>Modular Constructs</h2>
-        <p>
-          Small experiments. Each focused on a single idea to improve my developer skills.
-        </p>
-      </header>
+    <section id="projects">
+      <h2 className="section-label">~/projects</h2>
 
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <article key={project.id} className="project-card">
-            <div className="project-meta">
-              <span className="project-year">{project.year}</span>
-              <span className="project-dot">•</span>
-              <span className="project-roles">
-                {project.roles.join(" / ")}
+      <div className="list">
+        {visibleProjects.map((project) => (
+          <Link key={project.id} href={project.link} className="row">
+            <span className="row-head">
+              <span>
+                <span className="row-name">{project.title}</span>
+                {project.status && (
+                  <span className="row-status">[{project.status}]</span>
+                )}
               </span>
-            </div>
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-tagline">{project.tagline}</p>
-            {project.link && (
-              <Link
-                href={project.link}
-                className="project-link"
-                target={project.link.startsWith("http") ? "_blank" : "_self"}
-              >
-                view demo →
-              </Link>
-            )}
-          </article>
+              <span className="row-year">{project.year}</span>
+            </span>
+            <p className="row-tag">{project.tagline}</p>
+          </Link>
         ))}
       </div>
     </section>

@@ -28,6 +28,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "flywithme",
+    title: "FlyWithMe",
+    tagline: "A flight companion app.",
+    year: "2026",
+    roles: ["Web App"],
+    link: "https://flywithme.pentgon.com",
+    repo: "https://github.com/LucaMcAtarsney/flywithme",
+    meta: [],
+    demo: { kind: "component" },
+  },
+  {
     id: "alphasantorini",
     title: "AlphaSantorini",
     tagline: "An AlphaZero-style engine for the game Santorini.",

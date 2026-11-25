@@ -229,10 +229,30 @@ a {
 }
 
 .row:hover,
-.row:focus-visible {
+.row:focus-visible,
+.row:focus-within {
   background: var(--invert-bg);
   color: var(--invert-fg);
   outline: none;
+}
+
+.row-link {
+  display: block;
+  color: inherit;
+}
+
+.row-repo {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--dim);
+  border-bottom: 1px solid var(--line);
+}
+
+.row:hover .row-repo,
+.row:focus-within .row-repo {
+  color: var(--invert-fg);
+  opacity: 0.78;
 }
 
 .row-head {

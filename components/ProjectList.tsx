@@ -22,40 +22,51 @@ function RowBody({ project }: { project: Project }) {
   );
 }
 
+function RepoLink({ repo }: { repo: string }) {
+  return (
+    <a href={repo} target="_blank" rel="noreferrer" className="row-repo">
+      source ↗
+    </a>
+  );
+}
+
 export function ProjectList() {
   return (
     <section id="projects">
       <h2 className="section-label">~/projects</h2>
 
       <div className="list">
-        {visibleProjects.map((project) =>
-          isExternal(project.link) ? (
-            <div key={project.id} className="row">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                className="row-link"
-              >
+        {visibleProjects.map((project) => {
+          // Plain internal rows stay a single Link; rows with a repo need a
+          // wrapper so the source link isn't nested inside another anchor.
+          if (!project.repo && !isExternal(project.link)) {
+            return (
+              <Link key={project.id} href={project.link} className="row">
                 <RowBody project={project} />
-              </a>
-              {project.repo && (
+              </Link>
+            );
+          }
+
+          return (
+            <div key={project.id} className="row">
+              {isExternal(project.link) ? (
                 <a
-                  href={project.repo}
+                  href={project.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="row-repo"
+                  className="row-link"
                 >
-                  source ↗
+                  <RowBody project={project} />
                 </a>
+              ) : (
+                <Link href={project.link} className="row-link">
+                  <RowBody project={project} />
+                </Link>
               )}
+              {project.repo && <RepoLink repo={project.repo} />}
             </div>
-          ) : (
-            <Link key={project.id} href={project.link} className="row">
-              <RowBody project={project} />
-            </Link>
-          )
-        )}
+          );
+        })}
       </div>
     </section>
   );

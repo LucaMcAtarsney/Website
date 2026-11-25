@@ -49,7 +49,7 @@ export const projects: Project[] = [
     link: "/projects/alphasantorini",
     repo: "https://github.com/LucaMcAtarsney/AlphaSantorini",
     meta: [
-      "This demo pits the neural-net MCTS agent against a depth-2 Minimax.",
+      "Best experienced in full screen.",
       "Godot frontend, with a FastAPI and PyTorch backend on Render.",
       "First load can take up to a minute while the demo server wakes.",
     ],
